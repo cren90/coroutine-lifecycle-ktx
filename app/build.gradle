@@ -38,6 +38,7 @@ dependencies {
 
     //implementation "$rootProject.ext.library_group:$rootProject.ext.library_artifact:$rootProject.ext.library_version"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    implementation 'com.github.cren90:coroutine-lifecycle-ktx:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.1'
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'

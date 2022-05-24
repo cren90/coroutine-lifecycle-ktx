@@ -28,8 +28,30 @@ dependencies {
 ```
 
 # Usage
-Sample App coming soon!
+```kotlin
+    val coroutineFlowFromSomewhere = flow<Int> {
+        for (i in 0..100) {
+            emit(i)
+            delay(500)
+        }
+    }
+```
+```kotlin
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // The activity in this case is the lifecycle owner. In a fragment it would be
+        // viewLifecycleOwner.
+        launchForState(Lifecycle.State.STARTED) {
+            coroutineFlowFromSomewhere.collect {
+                Log.d("Sample", "Flow value = $it")
+            }
+        }
+    }
+```
 # About the author
 
 ### Chris Renfrow
