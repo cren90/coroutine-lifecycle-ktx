@@ -16,6 +16,6 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io'}
     }
 }
-rootProject.name = "Android Library Template"
+rootProject.name = "coroutine-lifecycle-ktx"
 include ':app'
-include ':library-template'
+include ':coroutinelifecyclektx'

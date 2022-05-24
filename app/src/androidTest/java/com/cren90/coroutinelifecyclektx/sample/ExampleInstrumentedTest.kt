@@ -1,4 +1,4 @@
-package com.cren90.android_library_template
+package com.cren90.coroutinelifecyclektx.sample
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.cren90.android_library_template", appContext.packageName)
+        assertEquals("com.cren90.coroutinelifecyclektx.sample", appContext.packageName)
     }
 }

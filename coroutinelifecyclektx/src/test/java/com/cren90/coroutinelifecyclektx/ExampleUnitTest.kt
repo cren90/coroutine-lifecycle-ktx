@@ -1,4 +1,4 @@
-package com.cren90.android_library_template
+package com.cren90.coroutinelifecyclektx
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
