@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 
-    val coroutineFlowFromSomewhere = flow<Int> {
+    private val coroutineFlowFromSomewhere = flow<Int> {
         for (i in 0..100) {
             emit(i)
             delay(500)
